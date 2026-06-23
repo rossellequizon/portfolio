@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE portfolio SYSTEM "content.dtd">
+<?xml-stylesheet type="text/xsl" href="content.xsl"?>
+<portfolio>
+  <languages>
+    <language code="fr" label="French" native="Français" dir="ltr"/>
+    <language code="en" label="English" native="English" dir="ltr"/>
+    <language code="ko" label="Korean" native="한국어" dir="ltr"/>
+  </languages>
+
+  <person id="rosselle-quizon">
+    <name>Rosselle QUIZON</name>
+    <headline>
+      <text lang="fr">Étudiante en ingénierie informatique</text>
+      <text lang="en">Computer engineering student</text>
+      <text lang="ko">컴퓨터공학 학생</text>
+    </headline>
+    <photo>assets/photo-rosselle.jpg</photo>
+    <email>rossellequizon@gmail.com</email>
+    <phone>07 68 41 89 57</phone>
+    <city>Paris</city>
+    <github>rossellequizon</github>
+  </person>
+
+  <blocks>
+    <block id="site_title">
+      <text lang="fr">Portfolio multilingue RDFa - Rosselle QUIZON</text>
+      <text lang="en">Multilingual RDFa Portfolio - Rosselle QUIZON</text>
+      <text lang="ko">다국어 RDFa 포트폴리오 - Rosselle QUIZON</text>
+    </block>
+    <block id="nav_about">
+      <text lang="fr">À propos</text>
+      <text lang="en">About</text>
+      <text lang="ko">소개</text>
+    </block>
+    <block id="nav_skills">
+      <text lang="fr">Compétences</text>
+      <text lang="en">Skills</text>
+      <text lang="ko">기술</text>
+    </block>
+    <block id="nav_projects">
+      <text lang="fr">Projets</text>
+      <text lang="en">Projects</text>
+      <text lang="ko">프로젝트</text>
+    </block>
+    <block id="nav_experience">
+      <text lang="fr">Expérience</text>
+      <text lang="en">Experience</text>
+      <text lang="ko">경험</text>
+    </block>
+    <block id="nav_education">
+      <text lang="fr">Formation</text>
+      <text lang="en">Education</text>
+      <text lang="ko">학력</text>
+    </block>
+    <block id="about_text">
+      <text lang="fr">Je suis étudiante en cycle ingénieur informatique à Sup Galilée. Ce portfolio présente mon CV, mes compétences techniques, mes projets académiques et mes expériences, avec un balisage sémantique RDFa exploitable par un agent web.</text>
+      <text lang="en">I am a computer engineering student at Sup Galilée. This portfolio presents my CV, technical skills, academic projects and experience, with RDFa semantic markup that can be read by a web agent.</text>
+      <text lang="ko">저는 Sup Galilée에서 컴퓨터공학을 공부하는 학생입니다. 이 포트폴리오는 제 이력서, 기술 역량, 학업 프로젝트와 경험을 RDFa 시맨틱 마크업으로 표현하여 웹 에이전트가 읽을 수 있도록 구성했습니다.</text>
+    </block>
+    <block id="semantic_note">
+      <text lang="fr">Les parties importantes du CV sont annotées avec FOAF, Dublin Core et schema.org : identité, document CV, compétences, projets, formation et expérience.</text>
+      <text lang="en">Important parts of the CV are annotated with FOAF, Dublin Core and schema.org: identity, CV document, skills, projects, education and experience.</text>
+      <text lang="ko">이력서의 중요한 부분은 FOAF, Dublin Core, schema.org로 태그되었습니다: 신원, CV 문서, 기술, 프로젝트, 학력 및 경험.</text>
+    </block>
+    <block id="cv_download">
+      <text lang="fr">Télécharger le CV PDF</text>
+      <text lang="en">Download the PDF CV</text>
+      <text lang="ko">PDF 이력서 다운로드</text>
+    </block>
+    <block id="video_title">
+      <text lang="fr">Vidéo de présentation</text>
+      <text lang="en">Presentation video</text>
+      <text lang="ko">소개 영상</text>
+    </block>
+    <block id="footer_text">
+      <text lang="fr">Portfolio statique sans PHP, contenu multilingue en XML, DTD fournie et balisage RDFa extractible.</text>
+      <text lang="en">Static portfolio without PHP, multilingual content in XML, DTD provided and extractable RDFa markup.</text>
+      <text lang="ko">PHP 없이 만든 정적 포트폴리오이며, 다국어 콘텐츠는 XML에 있고 DTD와 추출 가능한 RDFa 마크업을 포함합니다.</text>
+    </block>
+  </blocks>
+
+  <skills>
+    <skill id="skill-c" category="programming"><label><text lang="fr">C</text><text lang="en">C</text><text lang="ko">C</text></label></skill>
+    <skill id="skill-java" category="programming"><label><text lang="fr">Java</text><text lang="en">Java</text><text lang="ko">Java</text></label></skill>
+    <skill id="skill-python" category="programming"><label><text lang="fr">Python</text><text lang="en">Python</text><text lang="ko">Python</text></label></skill>
+    <skill id="skill-shell" category="programming"><label><text lang="fr">Shell</text><text lang="en">Shell</text><text lang="ko">셸</text></label></skill>
+    <skill id="skill-web" category="web"><label><text lang="fr">HTML, CSS, JavaScript</text><text lang="en">HTML, CSS, JavaScript</text><text lang="ko">HTML, CSS, JavaScript</text></label></skill>
+    <skill id="skill-sql" category="data"><label><text lang="fr">SQL et Excel</text><text lang="en">SQL and Excel</text><text lang="ko">SQL 및 Excel</text></label></skill>
+    <skill id="skill-tools" category="tools"><label><text lang="fr">Git/GitHub, Eclipse, VSCode, Wireshark, PowerPoint</text><text lang="en">Git/GitHub, Eclipse, VSCode, Wireshark, PowerPoint</text><text lang="ko">Git/GitHub, Eclipse, VSCode, Wireshark, PowerPoint</text></label></skill>
+  </skills>
+
+  <projects>
+    <project id="project-huffman" year="2025">
+      <title><text lang="fr">Codage Huffman</text><text lang="en">Huffman Coding</text><text lang="ko">허프만 코딩</text></title>
+      <description><text lang="fr">Implémentation en C d’un compresseur et d’un décompresseur de fichiers avec arbres binaires et gestion de fichiers binaires.</text><text lang="en">C implementation of a file compressor and decompressor using binary trees and binary file handling.</text><text lang="ko">이진 트리와 바이너리 파일 처리를 활용하여 C로 파일 압축기와 압축 해제기를 구현했습니다.</text></description>
+      <technology>C</technology>
+    </project>
+    <project id="project-farm" year="2025">
+      <title><text lang="fr">Simulation d’une ferme autosoutenable</text><text lang="en">Self-sustaining farm simulation</text><text lang="ko">자급자족 농장 시뮬레이션</text></title>
+      <description><text lang="fr">Modélisation orientée objet en Java avec héritage, interfaces, encapsulation, gestion des saisons et interface graphique interactive.</text><text lang="en">Object-oriented Java modelling with inheritance, interfaces, encapsulation, season management and an interactive graphical interface.</text><text lang="ko">상속, 인터페이스, 캡슐화, 계절 관리와 인터랙티브 GUI를 포함한 Java 객체지향 모델링 프로젝트입니다.</text></description>
+      <technology>Java</technology>
+    </project>
+    <project id="project-path" year="2024">
+      <title><text lang="fr">Recherche du plus court chemin</text><text lang="en">Shortest path search</text><text lang="ko">최단 경로 탐색</text></title>
+      <description><text lang="fr">Approche récursive et programmation dynamique en C pour maximiser la collecte de valeurs dans une grille, avec calculs de complexité.</text><text lang="en">Recursive approach and dynamic programming in C to maximise collected values in a grid, with complexity analysis.</text><text lang="ko">격자에서 값을 최대한 수집하기 위해 C로 재귀와 동적 프로그래밍을 적용하고 복잡도를 분석했습니다.</text></description>
+      <technology>C</technology>
+    </project>
+    <project id="project-space" year="2023">
+      <title><text lang="fr">Jeu Space Invaders</text><text lang="en">Space Invaders game</text><text lang="ko">스페이스 인베이더 게임</text></title>
+      <description><text lang="fr">Création d’un jeu en C avec gestion des événements et affichage graphique interactif.</text><text lang="en">Creation of a C game with event handling and interactive graphical display.</text><text lang="ko">이벤트 처리와 그래픽 표시를 포함한 C 기반 게임을 만들었습니다.</text></description>
+      <technology>C</technology>
+    </project>
+  </projects>
+
+  <experiences>
+    <experience id="experience-french-bastards" start="2023" end="2025">
+      <role><text lang="fr">Conseillère en vente</text><text lang="en">Sales assistant</text><text lang="ko">판매 상담원</text></role>
+      <organization>The French Bastards</organization>
+      <place>Paris 11ème arrondissement</place>
+      <description><text lang="fr">Développement des compétences relationnelles, travail d’équipe, écoute, gestion du stress et réactivité en environnement à fort flux.</text><text lang="en">Development of interpersonal skills, teamwork, listening, stress management and responsiveness in a high-traffic environment.</text><text lang="ko">고객 응대, 팀워크, 경청, 스트레스 관리와 바쁜 환경에서의 빠른 대응 능력을 키웠습니다.</text></description>
+    </experience>
+  </experiences>
+
+  <education>
+    <formation id="edu-engineering" start="2024" end="2027">
+      <degree><text lang="fr">Cycle Ingénieur en Informatique</text><text lang="en">Computer Engineering Degree</text><text lang="ko">컴퓨터공학 엔지니어 과정</text></degree>
+      <school>Sup Galilée, Université Sorbonne Paris Nord</school>
+      <place>Villetaneuse</place>
+      <description><text lang="fr">Programmation avancée en C, programmation orientée objet, architecture des ordinateurs, réseau, bases de données et algorithmique.</text><text lang="en">Advanced C programming, object-oriented programming, computer architecture, networking, databases and algorithms.</text><text lang="ko">고급 C 프로그래밍, 객체지향 프로그래밍, 컴퓨터 구조, 네트워크, 데이터베이스와 알고리즘을 학습합니다.</text></description>
+    </formation>
+    <formation id="edu-prepa" start="2022" end="2024">
+      <degree><text lang="fr">Classe Préparatoire Ingénieur Intégrée</text><text lang="en">Integrated Engineering Preparatory Cycle</text><text lang="ko">통합 엔지니어 예비 과정</text></degree>
+      <school>Sup Galilée, Université Sorbonne Paris Nord</school>
+      <place>Villetaneuse</place>
+      <description><text lang="fr">Mathématiques, physique, informatique, C, structures de données et complexité.</text><text lang="en">Mathematics, physics, computer science, C, data structures and complexity.</text><text lang="ko">수학, 물리, 컴퓨터 과학, C, 자료구조와 복잡도를 공부했습니다.</text></description>
+    </formation>
+  </education>
+
+  <interests>
+    <interest id="interest-literature"><label><text lang="fr">Littérature : fiction, science-fiction, fantastique</text><text lang="en">Literature: fiction, science fiction, fantasy</text><text lang="ko">문학: 소설, SF, 판타지</text></label></interest>
+    <interest id="interest-bde"><label><text lang="fr">Membre actif du BDE de Sup Galilée : communication et partenariat</text><text lang="en">Active member of the Sup Galilée student association: communication and partnerships</text><text lang="ko">Sup Galilée 학생회 활동: 커뮤니케이션 및 파트너십</text></label></interest>
+  </interests>
+
+  <videos>
+    <video id="video-fr" lang="fr"><source>assets/presentation.mp4</source><subtitle lang="fr">assets/subtitles-fr.vtt</subtitle></video>
+    <video id="video-en" lang="en"><source>assets/presentation.mp4</source><subtitle lang="en">assets/subtitles-en.vtt</subtitle></video>
+    <video id="video-ko" lang="ko"><source>assets/presentation.mp4</source><subtitle lang="ko">assets/subtitles-ko.vtt</subtitle></video>
+  </videos>
+</portfolio>

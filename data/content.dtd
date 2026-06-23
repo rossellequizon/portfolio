@@ -1,0 +1,61 @@
+<!ELEMENT portfolio (languages, person, blocks, skills, projects, experiences, education, interests, videos)>
+
+<!ELEMENT languages (language+)>
+<!ELEMENT language EMPTY>
+<!ATTLIST language
+          code ID #REQUIRED
+          label CDATA #REQUIRED
+          native CDATA #REQUIRED
+          dir (ltr|rtl) "ltr">
+
+<!ELEMENT person (name, headline, photo, email, phone, city, github)>
+<!ATTLIST person id ID #REQUIRED>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT headline (text+)>
+<!ELEMENT photo (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT github (#PCDATA)>
+
+<!ELEMENT blocks (block+)>
+<!ELEMENT block (text+)>
+<!ATTLIST block id ID #REQUIRED>
+<!ELEMENT text (#PCDATA)>
+<!ATTLIST text lang IDREF #REQUIRED>
+
+<!ELEMENT skills (skill+)>
+<!ELEMENT skill (label)>
+<!ATTLIST skill id ID #REQUIRED category CDATA #REQUIRED>
+<!ELEMENT label (text+)>
+
+<!ELEMENT projects (project+)>
+<!ELEMENT project (title, description, technology*)>
+<!ATTLIST project id ID #REQUIRED year CDATA #REQUIRED>
+<!ELEMENT title (text+)>
+<!ELEMENT description (text+)>
+<!ELEMENT technology (#PCDATA)>
+
+<!ELEMENT experiences (experience+)>
+<!ELEMENT experience (role, organization, place, description)>
+<!ATTLIST experience id ID #REQUIRED start CDATA #REQUIRED end CDATA #REQUIRED>
+<!ELEMENT role (text+)>
+<!ELEMENT organization (#PCDATA)>
+<!ELEMENT place (#PCDATA)>
+
+<!ELEMENT education (formation+)>
+<!ELEMENT formation (degree, school, place, description)>
+<!ATTLIST formation id ID #REQUIRED start CDATA #REQUIRED end CDATA #REQUIRED>
+<!ELEMENT degree (text+)>
+<!ELEMENT school (#PCDATA)>
+
+<!ELEMENT interests (interest+)>
+<!ELEMENT interest (label)>
+<!ATTLIST interest id ID #REQUIRED>
+
+<!ELEMENT videos (video+)>
+<!ELEMENT video (source, subtitle*)>
+<!ATTLIST video id ID #REQUIRED lang IDREF #REQUIRED>
+<!ELEMENT source (#PCDATA)>
+<!ELEMENT subtitle (#PCDATA)>
+<!ATTLIST subtitle lang IDREF #REQUIRED>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr"
+  prefix="foaf: http://xmlns.com/foaf/0.1/ dc: http://purl.org/dc/elements/1.1/ dcterms: http://purl.org/dc/terms/ schema: https://schema.org/ xsd: http://www.w3.org/2001/XMLSchema#">
+<head about="./index-en.html">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title property="dc:title">Rosselle QUIZON Portfolio</title>
+    <meta name="description" property="dc:description" content="Multilingual CV" />
+    <meta property="dc:language" content="en" />
+    <meta property="dc:creator" content="Rosselle QUIZON" />
+    <link rel="alternate" hreflang="fr" href="index-fr.html" />
+    <link rel="alternate" hreflang="en" href="index-en.html" />
+    <link rel="alternate" hreflang="ko" href="index-ko.html" />
+    <link rel="alternate" hreflang="x-default" href="index.html" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer="defer"></script>
+</head>
+<body about="./index-en.html" typeof="foaf:Document schema:WebPage">
+    <div class="language-switcher" aria-label="Language switcher">
+        <a class="lang-link" href="index-fr.html" hreflang="fr" data-switch-lang="fr">FR</a>
+        <a class="lang-link current" href="index-en.html" hreflang="en" data-switch-lang="en" aria-current="page">EN</a>
+        <a class="lang-link" href="index-ko.html" hreflang="ko" data-switch-lang="ko">KO</a>
+    </div>
+
+    <span rel="dc:creator" resource="#rosselle-quizon"></span>
+    <span property="dc:language" content="en"></span>
+
+    <header class="hero" id="top">
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+      </nav>
+
+      <section class="hero-grid" about="#rosselle-quizon" typeof="foaf:Agent foaf:Person schema:Person">
+        <div class="hero-text">
+          <p class="eyebrow" property="schema:jobTitle">Computer engineering student</p>
+          <h1 property="foaf:name schema:name">Rosselle QUIZON</h1>
+          <p class="intro" property="schema:description">This portfolio presents my CV, technical skills, academic projects and experience.</p>
+          <div class="actions">
+            <a class="button primary" href="assets/CV_Rosselle_QUIZON.pdf">Download the PDF CV</a>
+          </div>
+        </div>
+        <figure class="portrait">
+          <img property="foaf:img schema:image" src="assets/photo.jpeg" alt="Rosselle QUIZON" />
+        </figure>
+      </section>
+    </header>
+
+    <main class="container">
+      <section class="section two-columns" id="about">
+        <article class="panel" about="#rosselle-quizon" typeof="schema:Person">
+          <h2>About</h2>
+          <p>I am a computer engineering student at Sup Galilée and a software engineer apprentice at Thales LAS.</p>
+          <span about="#rosselle-quizon" rel="schema:knowsAbout" resource="#skill-c"></span>
+          <span about="#rosselle-quizon" rel="schema:knowsAbout" resource="#skill-java"></span>
+          <span about="#rosselle-quizon" rel="schema:knowsAbout" resource="#skill-python"></span>
+          <span about="#rosselle-quizon" rel="schema:knowsAbout" resource="#skill-shell"></span>
+          <span about="#rosselle-quizon" rel="schema:knowsAbout" resource="#skill-web"></span>
+          <span about="#rosselle-quizon" rel="schema:knowsAbout" resource="#skill-sql"></span>
+          <span about="#rosselle-quizon" rel="schema:knowsAbout" resource="#skill-tools"></span>
+          <span about="#rosselle-quizon" rel="schema:knowsAbout" resource="#skill-cpp"></span>
+          <span about="#rosselle-quizon" rel="schema:knowsAbout" resource="#skill-xml"></span>
+        </article>
+
+        <aside class="panel contact" id="contact" about="#rosselle-quizon">
+          <h2>Contact</h2>
+          <p><strong>Email</strong><br /><a property="foaf:mbox schema:email" href="mailto:rossellequizon@gmail.com">rossellequizon@gmail.com</a></p>
+          <p><strong>Phone</strong><br /><a property="foaf:phone schema:telephone" href="tel:+33768418957">07 68 41 89 57</a></p>
+          <p><strong>City</strong><br /><span property="foaf:based_near schema:addressLocality">Paris</span></p>
+          <p><strong>GitHub</strong><br /><a property="foaf:account schema:sameAs" href="https://github.com/rossellequizon">rossellequizon</a></p>
+          <p><strong>LinkedIn</strong><br /><a property="foaf:account schema:sameAs" href="https://www.linkedin.com/in/rossellequizon/">Rosselle QUIZON</a></p>
+        </aside>
+      </section>
+
+      <section class="section" id="skills" about="#skills-set" typeof="schema:DefinedTermSet">
+        <div class="section-heading">
+          <h2 property="schema:name">Skills</h2>
+        </div>
+        <ul class="skill-list">
+            <li about="#skill-c" typeof="schema:DefinedTerm" rel="schema:inDefinedTermSet" resource="#skills-set">
+              <span property="schema:name">C</span>
+              <span class="sr-only" property="schema:termCode">programming</span>
+            </li>
+<li about="#skill-cpp" typeof="schema:DefinedTerm" rel="schema:inDefinedTermSet" resource="#skills-set">
+              <span property="schema:name">C++</span>
+              <span class="sr-only" property="schema:termCode">programming</span>
+            </li>
+            <li about="#skill-java" typeof="schema:DefinedTerm" rel="schema:inDefinedTermSet" resource="#skills-set">
+              <span property="schema:name">Java</span>
+              <span class="sr-only" property="schema:termCode">programming</span>
+            </li>
+            <li about="#skill-python" typeof="schema:DefinedTerm" rel="schema:inDefinedTermSet" resource="#skills-set">
+              <span property="schema:name">Python</span>
+              <span class="sr-only" property="schema:termCode">programming</span>
+            </li>
+            <li about="#skill-shell" typeof="schema:DefinedTerm" rel="schema:inDefinedTermSet" resource="#skills-set">
+              <span property="schema:name">Shell</span>
+              <span class="sr-only" property="schema:termCode">programming</span>
+            </li>
+            <li about="#skill-web" typeof="schema:DefinedTerm" rel="schema:inDefinedTermSet" resource="#skills-set">
+              <span property="schema:name">HTML</span>
+              <span class="sr-only" property="schema:termCode">web</span>
+            </li>
+            <li about="#skill-web" typeof="schema:DefinedTerm" rel="schema:inDefinedTermSet" resource="#skills-set">
+              <span property="schema:name">CSS</span>
+              <span class="sr-only" property="schema:termCode">web</span>
+            </li>
+            <li about="#skill-web" typeof="schema:DefinedTerm" rel="schema:inDefinedTermSet" resource="#skills-set">
+              <span property="schema:name">JavaScript</span>
+              <span class="sr-only" property="schema:termCode">web</span>
+            </li>
+            <li about="#skill-sql" typeof="schema:DefinedTerm" rel="schema:inDefinedTermSet" resource="#skills-set">
+              <span property="schema:name">SQL</span>
+              <span class="sr-only" property="schema:termCode">data</span>
+            </li>
+            <li about="#skill-sql" typeof="schema:DefinedTerm" rel="schema:inDefinedTermSet" resource="#skills-set">
+              <span property="schema:name">Excel</span>
+              <span class="sr-only" property="schema:termCode">data</span>
+            </li>
+            <li about="#skill-tools" typeof="schema:DefinedTerm" rel="schema:inDefinedTermSet" resource="#skills-set">
+              <span property="schema:name">Git/GitHub</span>
+              <span class="sr-only" property="schema:termCode">tools</span>
+            </li>
+            <li about="#skill-tools" typeof="schema:DefinedTerm" rel="schema:inDefinedTermSet" resource="#skills-set">
+              <span property="schema:name">Eclipse</span>
+              <span class="sr-only" property="schema:termCode">tools</span>
+            </li>
+            <li about="#skill-tools" typeof="schema:DefinedTerm" rel="schema:inDefinedTermSet" resource="#skills-set">
+              <span property="schema:name">Wireshark</span>
+              <span class="sr-only" property="schema:termCode">tools</span>
+            </li>
+            <li about="#skill-xml" typeof="schema:DefinedTerm" rel="schema:inDefinedTermSet" resource="#skills-set">
+              <span property="schema:name">XML</span>
+              <span class="sr-only" property="schema:termCode">web</span>
+            </li>
+        </ul>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-heading">
+          <h2>Projects</h2>
+        </div>
+        <div class="cards">
+          <article class="card" id="project-huffman" about="#project-huffman" typeof="schema:CreativeWork schema:SoftwareSourceCode">
+            <div class="card-meta"><time property="schema:dateCreated" datatype="xsd:gYear" datetime="2025">2025</time></div>
+            <h3 property="schema:name">Huffman Coding</h3>
+            <p property="schema:description">C implementation of a file compressor and decompressor using binary trees and binary file handling.</p>
+            <p class="tags"><span property="schema:programmingLanguage">C</span> </p>
+            <span rel="schema:creator" resource="#rosselle-quizon"></span>
+          </article>
+          <article class="card" id="project-farm" about="#project-farm" typeof="schema:CreativeWork schema:SoftwareSourceCode">
+            <div class="card-meta"><time property="schema:dateCreated" datatype="xsd:gYear" datetime="2025">2025</time></div>
+            <h3 property="schema:name">Self-sustaining farm simulation</h3>
+            <p property="schema:description">Object-oriented Java modelling with inheritance, interfaces, encapsulation, season management and an interactive graphical interface.</p>
+            <p class="tags"><span property="schema:programmingLanguage">Java</span> </p>
+            <span rel="schema:creator" resource="#rosselle-quizon"></span>
+          </article>
+          <article class="card" id="project-path" about="#project-path" typeof="schema:CreativeWork schema:SoftwareSourceCode">
+            <div class="card-meta"><time property="schema:dateCreated" datatype="xsd:gYear" datetime="2024">2024</time></div>
+            <h3 property="schema:name">Shortest path search</h3>
+            <p property="schema:description">Recursive approach and dynamic programming in C to maximise collected values in a grid, with complexity analysis.</p>
+            <p class="tags"><span property="schema:programmingLanguage">C</span> </p>
+            <span rel="schema:creator" resource="#rosselle-quizon"></span>
+          </article>
+          <article class="card" id="project-space" about="#project-space" typeof="schema:CreativeWork schema:SoftwareSourceCode">
+            <div class="card-meta"><time property="schema:dateCreated" datatype="xsd:gYear" datetime="2023">2023</time></div>
+            <h3 property="schema:name">Space Invaders game</h3>
+            <p property="schema:description">Creation of a C game with event handling and interactive graphical display.</p>
+            <p class="tags"><span property="schema:programmingLanguage">C</span> </p>
+            <span rel="schema:creator" resource="#rosselle-quizon"></span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="section-heading">
+          <h2>Experience</h2>
+        </div>
+        <div class="cards">
+          <article class="card" id="experience-french-bastards" about="#experience-french-bastards" typeof="schema:EmployeeRole">
+            <div class="card-meta"><time property="schema:startDate" datetime="2023">2023</time> - <time property="schema:endDate" datetime="2025">2025</time></div>
+            <h3 property="schema:roleName">Sales assistant</h3>
+            <p><span rel="schema:worksFor" resource="#the-french-bastards"><span about="#the-french-bastards" typeof="schema:Organization"><span property="schema:name">The French Bastards</span></span></span> · <span property="schema:workLocation">Paris 11ème arrondissement</span></p>
+            <p property="schema:description">Development of interpersonal skills, teamwork, listening, stress management and responsiveness in a high-traffic environment.</p>
+            <span rel="schema:employee" resource="#rosselle-quizon"></span>
+          </article>
+          <article class="card" id="experience-thales" about="#experience-thales" typeof="schema:EmployeeRole"> 
+          <div class="card-meta"><time property="schema:startDate" datetime="2025">2025</time> - present</div> 
+          <h3 property="schema:roleName">Software development apprentice</h3> 
+          <p><span rel="schema:worksFor" resource="#thales-las"><span about="#thales-las" typeof="schema:Organization"><span property="schema:name">Thales LAS</span></span></span> · <span property="schema:workLocation">Massy, Île-de-France</span></p> 
+          <p property="schema:description">Work on internal HMIs used to test and analyse software components, with interface development in C++ and the Qt framework.</p> 
+          <span rel="schema:employee" resource="#rosselle-quizon"></span> 
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="education">
+        <div class="section-heading">
+          <h2>Education</h2>
+        </div>
+        <div class="cards">
+          <article class="card" id="edu-engineering" about="#edu-engineering" typeof="schema:EducationalOccupationalCredential">
+            <div class="card-meta"><time property="schema:startDate" datetime="2024">2024</time> - <time property="schema:endDate" datetime="2027">2027</time></div>
+            <h3 property="schema:name">Computer Engineering Degree</h3>
+            <p><span rel="schema:recognizedBy" resource="#sup-galilee"><span about="#sup-galilee" typeof="schema:CollegeOrUniversity"><span property="schema:name">Sup Galilée, Université Sorbonne Paris Nord</span></span></span> · <span property="schema:location">Villetaneuse</span></p>
+            <p property="schema:description">Advanced C programming, object-oriented programming, computer architecture, networking, databases and algorithms.</p>
+            <span about="#rosselle-quizon" rel="schema:hasCredential" resource="#edu-engineering"></span>
+          </article>
+          <article class="card" id="edu-prepa" about="#edu-prepa" typeof="schema:EducationalOccupationalCredential">
+            <div class="card-meta"><time property="schema:startDate" datetime="2022">2022</time> - <time property="schema:endDate" datetime="2024">2024</time></div>
+            <h3 property="schema:name">Integrated Engineering Preparatory Cycle</h3>
+            <p><span rel="schema:recognizedBy" resource="#sup-galilee"><span about="#sup-galilee" typeof="schema:CollegeOrUniversity"><span property="schema:name">Sup Galilée, Université Sorbonne Paris Nord</span></span></span> · <span property="schema:location">Villetaneuse</span></p>
+            <p property="schema:description">Mathematics, physics, computer science, C, data structures and complexity.</p>
+            <span about="#rosselle-quizon" rel="schema:hasCredential" resource="#edu-prepa"></span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section two-columns">
+        <article class="panel" about="#rosselle-quizon">
+          <h2>Languages</h2>
+          <ul class="clean-list">
+            <li property="schema:knowsLanguage">French <span class="muted">— native</span></li>
+            <li property="schema:knowsLanguage">English <span class="muted">— C1</span></li>
+            <li property="schema:knowsLanguage">Spanish <span class="muted">— B1</span></li>
+            <li property="schema:knowsLanguage">Filipino <span class="muted">— native</span></li>
+          </ul>
+        </article>
+        <article class="panel">
+          <h2>Interests</h2>
+          <ul class="clean-list">
+            <li about="#rosselle-quizon" property="schema:knowsAbout" resource="#interest-literature"><span about="#interest-literature" typeof="schema:Thing"><span property="schema:name">Literature: fiction, science fiction, fantasy</span></span></li>
+            <li about="#rosselle-quizon" property="schema:knowsAbout" resource="#interest-bde"><span about="#interest-bde" typeof="schema:Thing"><span property="schema:name">Active member of the Sup Galilée student association: communication and partnerships</span></span></li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="section" id="video">
+      	<div class="section-heading">
+      		<h2>Video presentation</h2>
+      	</div>
+      	<div class="video-wrapper">
+    		<iframe
+		  width="560"
+		  height="315"
+		  src="https://www.youtube.com/embed/R7ZUABR1mDE?cc_load_policy=1&amp;cc_lang_pref=en"
+		  title="Video presentation of Rosselle QUIZON"
+		  referrerpolicy="strict-origin-when-cross-origin"
+		  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+		  allowfullscreen="allowfullscreen">
+		</iframe>
+ 	</div>
+      </section>
+
+    </main>
+
+</body>
+</html>

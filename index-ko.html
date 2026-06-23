@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko" dir="ltr"
+  prefix="foaf: http://xmlns.com/foaf/0.1/ dc: http://purl.org/dc/elements/1.1/ dcterms: http://purl.org/dc/terms/ schema: https://schema.org/ xsd: http://www.w3.org/2001/XMLSchema#">
+<head about="./index-ko.html">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title property="dc:title">Rosselle QUIZON 포트폴리오</title>
+    <meta name="description" property="dc:description" content="마크업을 포함한" />
+    <meta property="dc:language" content="ko" />
+    <meta property="dc:creator" content="Rosselle QUIZON" />
+    <link rel="alternate" hreflang="fr" href="index-fr.html" />
+    <link rel="alternate" hreflang="en" href="index-en.html" />
+    <link rel="alternate" hreflang="ko" href="index-ko.html" />
+    <link rel="alternate" hreflang="x-default" href="index.html" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer="defer"></script>
+</head>
+<body about="./index-ko.html" typeof="foaf:Document schema:WebPage">
+    <div class="language-switcher" aria-label="Language switcher">
+        <a class="lang-link" href="index-fr.html" hreflang="fr" data-switch-lang="fr">FR</a>
+        <a class="lang-link" href="index-en.html" hreflang="en" data-switch-lang="en">EN</a>
+        <a class="lang-link current" href="index-ko.html" hreflang="ko" data-switch-lang="ko" aria-current="page">KO</a>
+    </div>
+
+    <span rel="dc:creator" resource="#rosselle-quizon"></span>
+    <span property="dc:language" content="ko"></span>
+
+    <header class="hero" id="top">
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="#about">소개</a>
+        <a href="#skills">기술</a>
+        <a href="#projects">프로젝트</a>
+        <a href="#experience">경험</a>
+        <a href="#education">학력</a>
+      </nav>
+
+      <section class="hero-grid" about="#rosselle-quizon" typeof="foaf:Agent foaf:Person schema:Person">
+        <div class="hero-text">
+          <p class="eyebrow" property="schema:jobTitle">컴퓨터공학 학생</p>
+          <h1 property="foaf:name schema:name">Rosselle QUIZON</h1>
+          <p class="intro" property="schema:description">이 포트폴리오는 제 이력서, 기술 역량, 학업 프로젝트와 경험을 소개합니다.</p>
+          <div class="actions">
+            <a class="button primary" href="assets/CV_Rosselle_QUIZON.pdf">PDF 이력서 다운로드</a>
+          </div>
+        </div>
+        <figure class="portrait">
+          <img property="foaf:img schema:image" src="assets/photo.jpeg" alt="Rosselle QUIZON" />
+        </figure>
+      </section>
+    </header>
+
+    <main class="container">
+      <section class="section two-columns" id="about">
+        <article class="panel" about="#rosselle-quizon" typeof="schema:Person">
+          <h2>소개</h2>
+          <p>저는 Sup Galilée에서 컴퓨터공학 엔지니어 과정을 공부하고 있으며, Thales LAS에서 소프트웨어 개발 apprentie로 일하고 있습니다.</p>
+          <span about="#rosselle-quizon" rel="schema:knowsAbout" resource="#skill-c"></span>
+          <span about="#rosselle-quizon" rel="schema:knowsAbout" resource="#skill-java"></span>
+          <span about="#rosselle-quizon" rel="schema:knowsAbout" resource="#skill-python"></span>
+          <span about="#rosselle-quizon" rel="schema:knowsAbout" resource="#skill-shell"></span>
+          <span about="#rosselle-quizon" rel="schema:knowsAbout" resource="#skill-web"></span>
+          <span about="#rosselle-quizon" rel="schema:knowsAbout" resource="#skill-sql"></span>
+          <span about="#rosselle-quizon" rel="schema:knowsAbout" resource="#skill-tools"></span>
+          <span about="#rosselle-quizon" rel="schema:knowsAbout" resource="#skill-cpp"></span>
+          <span about="#rosselle-quizon" rel="schema:knowsAbout" resource="#skill-xml"></span>
+        </article>
+
+        <aside class="panel contact" id="contact" about="#rosselle-quizon">
+          <h2>연락처</h2>
+          <p><strong>이메일</strong><br /><a property="foaf:mbox schema:email" href="mailto:rossellequizon@gmail.com">rossellequizon@gmail.com</a></p>
+          <p><strong>전화</strong><br /><a property="foaf:phone schema:telephone" href="tel:+33768418957">07 68 41 89 57</a></p>
+          <p><strong>도시</strong><br /><span property="foaf:based_near schema:addressLocality">파리</span></p>
+          <p><strong>깃허브</strong><br /><a property="foaf:account schema:sameAs" href="https://github.com/rossellequizon">rossellequizon</a></p>
+          <p><strong>링크드인</strong><br /><a property="foaf:account schema:sameAs" href="https://www.linkedin.com/in/rossellequizon/">Rosselle QUIZON</a></p>
+        </aside>
+      </section>
+
+      <section class="section" id="skills" about="#skills-set" typeof="schema:DefinedTermSet">
+        <div class="section-heading">
+          <h2 property="schema:name">기술</h2>
+        </div>
+        <ul class="skill-list">
+            <li about="#skill-c" typeof="schema:DefinedTerm" rel="schema:inDefinedTermSet" resource="#skills-set">
+              <span property="schema:name">C</span>
+              <span class="sr-only" property="schema:termCode">programming</span>
+            </li>
+            <li about="#skill-cpp" typeof="schema:DefinedTerm" rel="schema:inDefinedTermSet" resource="#skills-set">
+              <span property="schema:name">C++</span>
+              <span class="sr-only" property="schema:termCode">programming</span>
+            </li>
+            <li about="#skill-java" typeof="schema:DefinedTerm" rel="schema:inDefinedTermSet" resource="#skills-set">
+              <span property="schema:name">Java</span>
+              <span class="sr-only" property="schema:termCode">programming</span>
+            </li>
+            <li about="#skill-python" typeof="schema:DefinedTerm" rel="schema:inDefinedTermSet" resource="#skills-set">
+              <span property="schema:name">Python</span>
+              <span class="sr-only" property="schema:termCode">programming</span>
+            </li>
+            <li about="#skill-shell" typeof="schema:DefinedTerm" rel="schema:inDefinedTermSet" resource="#skills-set">
+              <span property="schema:name">Shell</span>
+              <span class="sr-only" property="schema:termCode">programming</span>
+            </li>
+            <li about="#skill-web" typeof="schema:DefinedTerm" rel="schema:inDefinedTermSet" resource="#skills-set">
+              <span property="schema:name">HTML</span>
+              <span class="sr-only" property="schema:termCode">web</span>
+            </li>
+            <li about="#skill-web" typeof="schema:DefinedTerm" rel="schema:inDefinedTermSet" resource="#skills-set">
+              <span property="schema:name">CSS</span>
+              <span class="sr-only" property="schema:termCode">web</span>
+            </li>
+            <li about="#skill-web" typeof="schema:DefinedTerm" rel="schema:inDefinedTermSet" resource="#skills-set">
+              <span property="schema:name">JavaScript</span>
+              <span class="sr-only" property="schema:termCode">web</span>
+            </li>
+            <li about="#skill-sql" typeof="schema:DefinedTerm" rel="schema:inDefinedTermSet" resource="#skills-set">
+              <span property="schema:name">SQL</span>
+              <span class="sr-only" property="schema:termCode">data</span>
+            </li>
+            <li about="#skill-sql" typeof="schema:DefinedTerm" rel="schema:inDefinedTermSet" resource="#skills-set">
+              <span property="schema:name">Excel</span>
+              <span class="sr-only" property="schema:termCode">data</span>
+            </li>
+            <li about="#skill-tools" typeof="schema:DefinedTerm" rel="schema:inDefinedTermSet" resource="#skills-set">
+              <span property="schema:name">Git/GitHub</span>
+              <span class="sr-only" property="schema:termCode">tools</span>
+            </li>
+            <li about="#skill-tools" typeof="schema:DefinedTerm" rel="schema:inDefinedTermSet" resource="#skills-set">
+              <span property="schema:name">Eclipse</span>
+              <span class="sr-only" property="schema:termCode">tools</span>
+            </li>
+            <li about="#skill-tools" typeof="schema:DefinedTerm" rel="schema:inDefinedTermSet" resource="#skills-set">
+              <span property="schema:name">Wireshark</span>
+              <span class="sr-only" property="schema:termCode">tools</span>
+            </li>
+            <li about="#skill-xml" typeof="schema:DefinedTerm" rel="schema:inDefinedTermSet" resource="#skills-set">
+              <span property="schema:name">XML</span>
+              <span class="sr-only" property="schema:termCode">web</span>
+            </li>
+        </ul>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-heading">
+          <h2>프로젝트</h2>
+        </div>
+        <div class="cards">
+          <article class="card" id="project-huffman" about="#project-huffman" typeof="schema:CreativeWork schema:SoftwareSourceCode">
+            <div class="card-meta"><time property="schema:dateCreated" datatype="xsd:gYear" datetime="2025">2025</time></div>
+            <h3 property="schema:name">허프만 코딩</h3>
+            <p property="schema:description">이진 트리와 바이너리 파일 처리를 활용하여 C로 파일 압축기와 압축 해제기를 구현했습니다.</p>
+            <p class="tags"><span property="schema:programmingLanguage">C</span> </p>
+            <span rel="schema:creator" resource="#rosselle-quizon"></span>
+          </article>
+          <article class="card" id="project-farm" about="#project-farm" typeof="schema:CreativeWork schema:SoftwareSourceCode">
+            <div class="card-meta"><time property="schema:dateCreated" datatype="xsd:gYear" datetime="2025">2025</time></div>
+            <h3 property="schema:name">자급자족 농장 시뮬레이션</h3>
+            <p property="schema:description">상속, 인터페이스, 캡슐화, 계절 관리와 인터랙티브 GUI를 포함한 Java 객체지향 모델링 프로젝트입니다.</p>
+            <p class="tags"><span property="schema:programmingLanguage">Java</span> </p>
+            <span rel="schema:creator" resource="#rosselle-quizon"></span>
+          </article>
+          <article class="card" id="project-path" about="#project-path" typeof="schema:CreativeWork schema:SoftwareSourceCode">
+            <div class="card-meta"><time property="schema:dateCreated" datatype="xsd:gYear" datetime="2024">2024</time></div>
+            <h3 property="schema:name">최단 경로 탐색</h3>
+            <p property="schema:description">격자에서 값을 최대한 수집하기 위해 C로 재귀와 동적 프로그래밍을 적용하고 복잡도를 분석했습니다.</p>
+            <p class="tags"><span property="schema:programmingLanguage">C</span> </p>
+            <span rel="schema:creator" resource="#rosselle-quizon"></span>
+          </article>
+          <article class="card" id="project-space" about="#project-space" typeof="schema:CreativeWork schema:SoftwareSourceCode">
+            <div class="card-meta"><time property="schema:dateCreated" datatype="xsd:gYear" datetime="2023">2023</time></div>
+            <h3 property="schema:name">스페이스 인베이더 게임</h3>
+            <p property="schema:description">이벤트 처리와 그래픽 표시를 포함한 C 기반 게임을 만들었습니다.</p>
+            <p class="tags"><span property="schema:programmingLanguage">C</span> </p>
+            <span rel="schema:creator" resource="#rosselle-quizon"></span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="section-heading">
+          <h2>경험</h2>
+        </div>
+        <div class="cards">
+          <article class="card" id="experience-french-bastards" about="#experience-french-bastards" typeof="schema:EmployeeRole">
+            <div class="card-meta"><time property="schema:startDate" datetime="2023">2023</time> - <time property="schema:endDate" datetime="2025">2025</time></div>
+            <h3 property="schema:roleName">판매 상담원</h3>
+            <p><span rel="schema:worksFor" resource="#the-french-bastards"><span about="#the-french-bastards" typeof="schema:Organization"><span property="schema:name">The French Bastards</span></span></span> · <span property="schema:workLocation">파리 11구</span></p>
+            <p property="schema:description">고객 응대, 팀워크, 경청, 스트레스 관리와 바쁜 환경에서의 빠른 대응 능력을 키웠습니다.</p>
+            <span rel="schema:employee" resource="#rosselle-quizon"></span>
+          </article>
+          <article class="card" id="experience-thales" about="#experience-thales" typeof="schema:EmployeeRole"> 
+          	<div class="card-meta"><time property="schema:startDate" datetime="2025">2025</time> - 현재</div> 
+          	<h3 property="schema:roleName">소프트웨어 개발 인턴</h3> 
+          	<p><span rel="schema:worksFor" resource="#thales-las"><span about="#thales-las" typeof="schema:Organization"><span property="schema:name">Thales LAS</span></span></span> · <span property="schema:workLocation">Massy, Île-de-France</span></p> <p property="schema:description">소프트웨어 컴포넌트를 테스트하고 분석하는 내부 IHM 작업에 참여하며, C++와 Qt 프레임워크로 인터페이스 개발을 수행하고 있습니다.</p> 
+          	<span rel="schema:employee" resource="#rosselle-quizon"></span> 
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="education">
+        <div class="section-heading">
+          <h2>학력</h2>
+        </div>
+        <div class="cards">
+          <article class="card" id="edu-engineering" about="#edu-engineering" typeof="schema:EducationalOccupationalCredential">
+            <div class="card-meta"><time property="schema:startDate" datetime="2024">2024</time> - <time property="schema:endDate" datetime="2027">2027</time></div>
+            <h3 property="schema:name">컴퓨터공학 엔지니어 과정</h3>
+            <p><span rel="schema:recognizedBy" resource="#sup-galilee"><span about="#sup-galilee" typeof="schema:CollegeOrUniversity"><span property="schema:name">Sup Galilée, Université Sorbonne Paris Nord</span></span></span> · <span property="schema:location">빌타뇌즈</span></p>
+            <p property="schema:description">고급 C 프로그래밍, 객체지향 프로그래밍, 컴퓨터 구조, 네트워크, 데이터베이스와 알고리즘을 학습합니다.</p>
+            <span about="#rosselle-quizon" rel="schema:hasCredential" resource="#edu-engineering"></span>
+          </article>
+          <article class="card" id="edu-prepa" about="#edu-prepa" typeof="schema:EducationalOccupationalCredential">
+            <div class="card-meta"><time property="schema:startDate" datetime="2022">2022</time> - <time property="schema:endDate" datetime="2024">2024</time></div>
+            <h3 property="schema:name">통합 엔지니어 예비 과정</h3>
+            <p><span rel="schema:recognizedBy" resource="#sup-galilee"><span about="#sup-galilee" typeof="schema:CollegeOrUniversity"><span property="schema:name">Sup Galilée, Université Sorbonne Paris Nord</span></span></span> · <span property="schema:location">빌타뇌즈</span></p>
+            <p property="schema:description">수학, 물리, 컴퓨터 과학, C, 자료구조와 복잡도를 공부했습니다.</p>
+            <span about="#rosselle-quizon" rel="schema:hasCredential" resource="#edu-prepa"></span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section two-columns">
+        <article class="panel" about="#rosselle-quizon">
+          <h2>언어</h2>
+          <ul class="clean-list">
+            <li property="schema:knowsLanguage">프랑스어 <span class="muted">— 모국어</span></li>
+            <li property="schema:knowsLanguage">영어 <span class="muted">— C1</span></li>
+            <li property="schema:knowsLanguage">스페인어 <span class="muted">— B1</span></li>
+            <li property="schema:knowsLanguage">필리핀어 <span class="muted">— 모국어</span></li>
+          </ul>
+        </article>
+        <article class="panel">
+          <h2>관심 분야</h2>
+          <ul class="clean-list">
+            <li about="#rosselle-quizon" property="schema:knowsAbout" resource="#interest-literature"><span about="#interest-literature" typeof="schema:Thing"><span property="schema:name">문학: 소설, 과학 소설, 판타지</span></span></li>
+            <li about="#rosselle-quizon" property="schema:knowsAbout" resource="#interest-bde"><span about="#interest-bde" typeof="schema:Thing"><span property="schema:name">Sup Galilée 학생회 활동: 커뮤니케이션 및 파트너십</span></span></li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="section" id="video">
+  <div class="section-heading">
+    <h2>소개 영상</h2>
+  </div>
+
+  <div class="video-wrapper">
+	<iframe
+	  width="560"
+	  height="315"
+	  src="https://www.youtube.com/embed/R7ZUABR1mDE?cc_load_policy=1&amp;cc_lang_pref=ko"
+	  title="Rosselle QUIZON 소개 영상"
+	  referrerpolicy="strict-origin-when-cross-origin"
+	  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+	  allowfullscreen="allowfullscreen">
+	</iframe>
+  </div>
+</section>
+
+    </main>
+
+</body>
+</html>
